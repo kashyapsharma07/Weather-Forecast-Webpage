@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="location">
+            <input type="text" id="country" placeholder="Country">
+            <input type="text" id="city" placeholder="City">
+            <input type="submit" id="check" value="Go">
+        </div>
+        
+        <div class="weather-card">
+            <div class="weather-header">
+                <h2 id="weatherCountry">Cityname</h2>
+            </div>
+            
+            <div class="weather-main">
+                <div class="temp-display">
+                    <h1 id="temperature">0°<b>C</b></h1>
+                    <p id="weatherDescription">Description</p>
+                </div>
+                <img src="tempicons/clouds.svg" alt="" id="tempIcon">
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail-row">
+                    <span class="label">Feels Like</span>
+                    <span id="feelsLike">0°C</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Humidity</span>
+                    <span id="humidity">0</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Latitude</span>
+                    <span id="latitude">0</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Longitude</span>
+                    <span id="longitude">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
